@@ -9,7 +9,7 @@ const forecast = (lat, lon, callback) => {
         } else if (body.error) {
             callback('Invalid Input')
         } else {
-            callback(undefined, body.forecast.forecastday[0].day.condition.text + '. It is currently ' + body.current.temp_c + ' degrees out. There is ' + body.forecast.forecastday[0].day.condition.daily_chance_of_rain + '% chances of rain', body.forecast.forecastday[0].day.maxtemp_c)
+            callback(undefined, body.forecast.forecastday[0].day.condition.text + '. It is currently ' + body.current.temp_c + ' degrees out. There is ' + body.forecast.forecastday[0].day.daily_chance_of_rain + '% chances of rain', body.forecast.forecastday[0].day.maxtemp_c)
         }
     })
 }
