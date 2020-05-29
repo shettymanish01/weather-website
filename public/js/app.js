@@ -4,6 +4,17 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 const messageThree = document.querySelector('#message-3')
 
+const input = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+const expand = () => {
+    searchBtn.classList.toggle("close");
+    input.classList.toggle("square");
+};
+
+searchBtn.addEventListener("click", expand);
+
+
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 

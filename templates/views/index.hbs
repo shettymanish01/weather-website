@@ -11,10 +11,9 @@
 <body>
     <div class="main-content">
     {{>header}}
-    <p>Use this to find Forecast</p>
-    <form>
-        <input placeholder="Location">
-        <button>Find</button>
+    <form id="content">
+        <input type="text" name="input" class="input" id="search-input">
+        <button type="reset" class="search" id="search-btn"></button>
     </form>
     <p id='message-1'></p>
     <p id='message-2'></p>
